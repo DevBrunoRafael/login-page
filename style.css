@@ -71,6 +71,7 @@ body{
   color: rgb(61, 60, 66);
   box-shadow: 0px 10px 40px #00000056;
   box-sizing: border-box;
+  display: flex;
   position: relative;
 }
 
@@ -105,6 +106,10 @@ body{
 
 .textfield .form-group input:focus{
   border: 2px solid #8257e5;
+}
+
+.textfield .form-group input:focus + i{
+  color: #8257e5;
 }
 
 .btn-login{
