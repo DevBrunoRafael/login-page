@@ -6,14 +6,13 @@ body{
 .main-login{
   width: 100vw;
   height: 100vh;
-  background-color: #201b2c;
+  background-color: rgb(18, 18, 20);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .left-login{
-  /* background-color: red; */
   width: 50vw;
   height: 100vh;
   display: flex;
@@ -23,17 +22,17 @@ body{
 }
 
 .left-login > h1 {
-  /* background-color: grey; */
-  color: #00ff88;
-  font-size: 2.5em;
+  color: #8257e5;
+  font-size: 54px;
+  margin-left: 22%;
 }
 
 .left-login-image{
   width: 40vw;
+  margin-left: 22%;
 }
 
 .right-login{
-  /* background-color: blue; */
   width: 50vw;
   height: 100vh;
   display: flex;
@@ -42,25 +41,18 @@ body{
 }
 
 .card-login{
-  /* background-color: yellow; */
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 30px 35px;
-  background-color: #2f2841;
-  border-radius: 20px;
+  padding: 45px;
+  background-color: #202024;
+  border-radius: 10px;
   /* (direita,esqueda), (cima(-valor),baixo(valor)), blur cor */
   box-shadow: 0px 10px 40px #00000056;
 }
 
-.card-login > h2{
-  color: #00ff88;
-  font-weight: 800;
-  margin: 0;
-  margin-bottom: 20px;
-}
 
 .textfield{
   width: 100%;
@@ -74,19 +66,19 @@ body{
 .textfield .form-group{
   width: 100%;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 15px;
-  background-color: #514869;
-  color: #f0ffffde;
+  background-color: rgb(18, 18, 20);
+  color: rgb(61, 60, 66);
   box-shadow: 0px 10px 40px #00000056;
   box-sizing: border-box;
 }
 
 .textfield .form-group > input{
   width: 80%;
-  padding-left: 10px;
+  padding-left: 15px;
   border: none;
-  background-color: #514869;
+  background-color: rgb(18, 18, 20);
   color: #f0ffffde;
   font-size: 12pt;
   outline: none;
@@ -94,7 +86,7 @@ body{
 }
 
 .textfield .form-group > input::placeholder{
-  color: #f0ffff94;
+  color:rgb(61, 60, 66)
 }
 
 .textfield > label{
@@ -107,21 +99,32 @@ body{
   padding: 16px 0px;
   margin: 25px;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   outline: none;
   font-weight: 800;
   font-size: 12pt;
   letter-spacing: 0px;
-  color: #2b134b;
-  background-color: #00ff88;
+  text-transform: uppercase;
+  color: #E1E1E6;
+  background-color: rgb(130, 87, 229);
   cursor: pointer;
-  box-shadow: 0px 10px 40px -12px #00ff8052;
+  margin-bottom: 40px;
 }
 
-.card-login > a{
+.btn-login:hover{
+  background-color: #8d62f1;
+}
+
+.card-login > span{
+  color: #E1E1E6;
+  font-size: 0.8em;
+}
+
+.card-login > span > a{
   margin-top: 10px;
   text-decoration: none;
-  color: #f0ffffde;
-  font-size: 0.8em;
+  color: hsl(258, 74%, 62%);
+  font-size: 1em;
+  font-weight: 700;
 }
 
