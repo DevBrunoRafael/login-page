@@ -1,6 +1,7 @@
-body{
+*{
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  padding: 0;
 }
 
 .main-login{
@@ -22,14 +23,15 @@ body{
 }
 
 .left-login > h1 {
-  color: #8257e5;
+  color: #E1E1E6;
   font-size: 54px;
   margin-left: 22%;
+  margin-bottom: 20px;
 }
 
 .left-login-image{
-  width: 40vw;
-  margin-left: 22%;
+  width: 35vw;
+  margin-left: 20%;
 }
 
 .right-login{
@@ -46,11 +48,22 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 45px;
+  padding: 50px;
   background-color: #202024;
   border-radius: 10px;
   /* (direita,esqueda), (cima(-valor),baixo(valor)), blur cor */
   box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h2{
+  color: #8257e5;
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.card-login > h2 > span{
+  color: #E1E1E6;
 }
 
 
@@ -112,16 +125,32 @@ body{
   color: #8257e5;
 }
 
+.card-login .redirect-pass{
+  width: 100%;
+}
+
+.card-login .redirect-pass > a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #674ea1;
+  font-size: 10pt;
+  text-align: left;
+}
+
+.card-login span a:hover{
+  color: #8257e5;
+}
+
 .btn-login{
+  font-family: 'Roboto', sans-serif;
   width: 100%;
   padding: 16px 0px;
   margin: 25px;
   border: none;
   border-radius: 5px;
   outline: none;
-  font-weight: 800;
-  font-size: 12pt;
-  letter-spacing: 0px;
+  font-weight: bold;
+  font-size: 16px;
   text-transform: uppercase;
   color: #E1E1E6;
   background-color: rgb(130, 87, 229);
